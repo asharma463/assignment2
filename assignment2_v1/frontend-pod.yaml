@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apppod
+  labels:
+    app: apppod
+spec:
+  containers:
+  - name: appcontainer
+    image: 219594430677.dkr.ecr.us-east-1.amazonaws.com/apprepo:v1.1
+    ports:
+    - containerPort: 8080
+    env: 
+     - name: DBHOST
+       value: mysqlservice.sqldb.svc.cluster.local
+     - name: DBUSER
+       value: root
+     - name: DBPORT
+       value: "3306"
+     - name: DBPWD
+       value: Ashmit@321
