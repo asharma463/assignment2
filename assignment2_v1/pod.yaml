@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dbpod
+  labels:
+    app: dbpod
+spec:
+  containers:
+  - name: dbcontainer
+    image: 219594430677.dkr.ecr.us-east-1.amazonaws.com/databaserepo:v1.1
+    ports:
+    - containerPort: 3306
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: Ashmit@321
