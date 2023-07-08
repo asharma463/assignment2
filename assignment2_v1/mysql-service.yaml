@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: mysqlservice
   labels:
-    app.kubernetes.io/app: dbpod
+    app: dbpod
 spec:
   ports:
   - port: 27017
     targetPort: 27017
   selector:
-    app.kubernetes.io/app: mongo
+   app: dbpod
