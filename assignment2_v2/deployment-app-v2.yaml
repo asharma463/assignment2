@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: deployment-app
-        image: 219594430677.dkr.ecr.us-east-1.amazonaws.com/apprepo:v1.2
+        image: 219594430677.dkr.ecr.us-east-1.amazonaws.com/apprepo:v1.3
         resources:
           requests:
             cpu: 100m
