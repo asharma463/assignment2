@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodeportservice-v2
+  labels:
+    app: apppod
+spec:
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8080
+      nodePort: 30000
+  selector:
+    app: apppod
