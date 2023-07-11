@@ -3,7 +3,8 @@ kind: Service
 metadata:
   name: nodeportservice-v2
   labels:
-    app: apppod-v2
+    app: employees
+    version: v2
 spec:
   type: NodePort
   ports:
@@ -12,4 +13,5 @@ spec:
       targetPort: 8080
       nodePort: 30000
   selector:
-    app: apppod
+    app: employees
+    version: v2
