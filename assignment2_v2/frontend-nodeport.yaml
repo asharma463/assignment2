@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nodeportservice-v2
   labels:
-    app: apppod
+    app: apppod-v2
 spec:
   type: NodePort
   ports:

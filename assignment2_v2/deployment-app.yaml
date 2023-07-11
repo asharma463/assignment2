@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: deployment-app-v2
   labels:
-    app: apppod
+    app: apppod-v2
 spec:
   selector:
     matchLabels:
